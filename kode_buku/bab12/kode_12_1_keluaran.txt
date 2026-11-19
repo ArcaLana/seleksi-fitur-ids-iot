@@ -1,0 +1,8 @@
+Jumlah fitur dan biaya tiap kandidat pada seed 42:
+C0_semua                  80 fitur, biaya 190
+C1_anova20                20 fitur, biaya 43
+C2_xgb20                  20 fitur, biaya 40
+C3_ovr20                  20 fitur, biaya 33
+C4_xgb_biaya              24 fitur, biaya 40
+C5_xgb_biaya_tanpa_port   25 fitur, biaya 40
+C6_rf_biaya               25 fitur, biaya 40

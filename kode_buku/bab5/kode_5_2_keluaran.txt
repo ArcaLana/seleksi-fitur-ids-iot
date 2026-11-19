@@ -1,0 +1,5 @@
+importance Random Forest                  2.1 dtk
+importance XGBoost                        8.6 dtk
+permutation importance (3 pengulangan)   20.2 dtk
+regresi logistik L1 (40.000 baris)       19.9 dtk
+RFE dengan XGBoost (30.000 baris)        13.3 dtk

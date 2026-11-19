@@ -1,0 +1,9 @@
+anova  k=20: fitur berbeda yang pernah terpilih = 22 dari 80 | terpilih di 20 seed = 17 | di
+     >=10 seed = 20
+       irisan antar-pasangan: min 18, maks 20, rata-rata 19.36
+perm   k=20: fitur berbeda yang pernah terpilih = 53 dari 80 | terpilih di 20 seed = 8 | di 
+    >=10 seed = 16
+       irisan antar-pasangan: min 9, maks 17, rata-rata 13.59
+perm, frekuensi pemilihan 6 fitur teratas: [('fwd_URG_flag_count', 20), ('flow_iat.min', 20)
+    , ('fwd_last_window_size', 20), ('fwd_header_size_min', 20), ('id.resp_p', 20), ('id.ori
+    g_p', 20)]

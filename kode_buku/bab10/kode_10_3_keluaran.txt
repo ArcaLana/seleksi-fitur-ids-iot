@@ -1,0 +1,2 @@
+80 fitur      : terdeteksi serangan baru 0.56 | serangan dikenal 0.999 | alarm palsu 0.006
+ANOVA 20 fitur: terdeteksi serangan baru 0.35 | serangan dikenal 0.999 | alarm palsu 0.010

@@ -1,0 +1,11 @@
+Cuplikan hasil seed 42 untuk k = 20 dan model penuh:
+ metode  k  f1_macro  t_latih
+  semua 80    0.9838  12.4486
+  anova 20    0.9635   3.7844
+     mi 20    0.8852   4.0360
+ rf_imp 20    0.9241   4.2575
+xgb_imp 20    0.9703   4.0436
+   perm 20    0.9810   3.6069
+     l1 20    0.9764   4.1178
+rfe_xgb 20    0.9743   3.9519
+   acak 20    0.9681   4.5769

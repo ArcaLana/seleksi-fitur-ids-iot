@@ -1,0 +1,3 @@
+Friedman k=20: statistik = 86.5, p = 1.6e-16
+anova vs model penuh: selisih = -0.0089, menang 4/20, p = 0.0001
+perm vs model penuh: selisih = -0.0006, menang 8/20, p = 0.4524

@@ -1,0 +1,2 @@
+latih 80736 baris | uji dikenal 34602 baris | serangan baru 2584 baris (tidak dipakai di man
+    a pun)

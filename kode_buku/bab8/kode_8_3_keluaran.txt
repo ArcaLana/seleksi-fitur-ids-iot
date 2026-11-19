@@ -1,0 +1,4 @@
+anova  k=20 (20 seed): rata-rata 0.9658 | simpangan baku 0.0082 | rentang 0.9545 sampai 0.97
+    82
+perm   k=20 (20 seed): rata-rata 0.9741 | simpangan baku 0.0094 | rentang 0.9539 sampai 0.98
+    97
