@@ -1,0 +1,12 @@
+ d   (jarak terjauh - terdekat) / terdekat
+   2   40.73
+  10   4.65
+  80   0.46
+1000   0.13
+ 
+kemungkinan subset dari 80 fitur
+semua subset      : 2^80 = 1.21e+24
+tepat  5 fitur    : 2.40e+07
+tepat 10 fitur    : 1.65e+12
+tepat 20 fitur    : 3.54e+18
+tepat 40 fitur    : 1.08e+23

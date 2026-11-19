@@ -1,0 +1,5 @@
+variabel  status/aliran(B)   10.000 aliran   50.000 aliran  100.000 aliran
+      12               136        1.36 MB        6.80 MB       13.60 MB
+      20               200        2.00 MB       10.00 MB       20.00 MB
+      30               280        2.80 MB       14.00 MB       28.00 MB
+      80               680        6.80 MB       34.00 MB       68.00 MB

@@ -1,0 +1,6 @@
+jumlah fitur: 80 | biaya total: 190
+biaya 1: 25 fitur, contoh ['id.orig_p', 'id.resp_p']
+biaya 2: 21 fitur, contoh ['fwd_pkts_per_sec', 'bwd_pkts_per_sec']
+biaya 3: 15 fitur, contoh ['fwd_pkts_payload.std', 'bwd_pkts_payload.std']
+biaya 4: 17 fitur, contoh ['fwd_iat.std', 'bwd_iat.std']
+biaya 5:  2 fitur, contoh ['active.std', 'idle.std']

@@ -1,0 +1,3 @@
+NMAP_FIN_SCAN                    20 baris latih
+Metasploit_Brute_Force_SSH       25 baris latih
+Wipro_bulb                      153 baris latih
