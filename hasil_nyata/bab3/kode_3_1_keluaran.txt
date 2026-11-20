@@ -1,2 +1,0 @@
-seleksi sebelum pembagian : akurasi 0.845
-seleksi di dalam lipatan  : akurasi 0.514   (nilai sebenarnya 0,5)

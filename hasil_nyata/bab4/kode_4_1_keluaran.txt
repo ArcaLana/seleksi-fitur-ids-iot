@@ -1,4 +1,0 @@
-fitur konstan di data latih : 0 | fitur dengan <= 3 nilai berbeda: 1
-|r| > 0.90:   83 pasangan, 31 fitur dapat dibuang
-|r| > 0.95:   53 pasangan, 24 fitur dapat dibuang
-|r| > 0.99:   22 pasangan, 13 fitur dapat dibuang
