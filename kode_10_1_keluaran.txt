@@ -1,8 +1,0 @@
-varian      dengan_port  tanpa_port  selisih
-metode  k                                   
-anova   10       0.9432      0.9432   0.0000
-        20       0.9658      0.9618  -0.0040
-semua   78          NaN      0.9632      NaN
-        80       0.9747         NaN      NaN
-xgb_imp 10       0.9612      0.9566  -0.0046
-        20       0.9655      0.9591  -0.0064
