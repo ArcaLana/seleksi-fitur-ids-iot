@@ -1,0 +1,2 @@
+latih 6.08 dtk | satu baris: median 0.447 ms, p95 0.705 ms
+batch 35377 baris: 0.312 dtk (8.82 mikrodetik per baris)
