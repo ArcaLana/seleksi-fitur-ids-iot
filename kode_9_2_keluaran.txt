@@ -1,4 +1,0 @@
-anova ['fwd_URG_flag_count', 'fwd_pkts_payload.min', 'fwd_last_window_size', 'fwd_pkts_pay
-    load.avg', 'idle.min']
-mi ['fwd_pkts_payload.max', 'fwd_pkts_payload.avg', 'flow_pkts_payload.tot', 'fwd_subflow_
-    bytes', 'fwd_pkts_payload.tot']
