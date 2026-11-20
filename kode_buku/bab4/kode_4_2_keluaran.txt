@@ -1,3 +1,0 @@
-ANOVA F (seluruh data latih)         0.08 dtk
-chi-kuadrat (seluruh data latih)     0.15 dtk
-mutual information (10.000 baris)    2.38 dtk

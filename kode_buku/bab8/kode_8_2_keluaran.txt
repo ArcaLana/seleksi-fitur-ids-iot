@@ -1,5 +1,0 @@
-Lima fitur teratas pada seed 42:
-tunggal : ['fwd_URG_flag_count', 'flow_iat.min', 'fwd_last_window_size', 'fwd_header_size_mi
-    n', 'id.resp_p']
-agregat : ['fwd_URG_flag_count', 'flow_iat.min', 'fwd_last_window_size', 'fwd_header_size_mi
-    n', 'flow_FIN_flag_count']

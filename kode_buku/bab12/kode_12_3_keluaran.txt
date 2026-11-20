@@ -1,9 +1,0 @@
-                        K1 biaya K2 F1 K3 FIN K4 stabil      K5 baru
-kandidat                                                            
-C0_semua                   False  True   True         -         True
-C1_anova20                 False  True   True      True        False
-C2_xgb20                   False  True   True      True         True
-C3_ovr20                    True  True   True      True  tidak diuji
-C4_xgb_biaya                True  True   True      True         True
-C5_xgb_biaya_tanpa_port     True  True   True      True         True
-C6_rf_biaya                 True  True   True     False         True
