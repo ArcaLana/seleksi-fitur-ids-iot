@@ -1,0 +1,16 @@
+                               count  sum  persen
+kelompok                                         
+selang waktu antarpaket (IAT)     15   48    25.3
+aktif dan diam                    10   42    22.1
+ukuran payload                    15   33    17.4
+rentetan paket (bulk)              6   24    12.6
+laju dan rasio                     5   10     5.3
+flag TCP                           9    9     4.7
+subflow                            4    8     4.2
+ukuran header                      6    6     3.2
+hitungan paket dan durasi          5    5     2.6
+jendela TCP                        3    3     1.6
+port                               2    2     1.1
+total: 190 | rata-rata per fitur: 2.375
+20 fitur termurah: 20 | 20 fitur termahal: 81
+fitur berbiaya >= 3: 34 fitur, 123 satuan

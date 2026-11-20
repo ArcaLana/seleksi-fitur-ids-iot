@@ -1,0 +1,2 @@
+baris: 117922 | fitur: 80 | kelas: 12
+latih: (82545, 80) | uji: (35377, 80)

@@ -1,0 +1,3 @@
+anova  k=20: Jaccard 0.941 | Kuncheva 0.958  (190 pasangan)
+perm   k=20: Jaccard 0.520 | Kuncheva 0.573  (190 pasangan)
+dua himpunan acak: harapan irisan = k*k/N = 5.0 fitur, Jaccard sekitar 0.14

@@ -1,0 +1,2 @@
+|r| terbesar antara fitur acak dan label : rata-rata 0.354
+rata-rata F dari 20 fitur teratas        : 8.87   (F tipikal satu fitur acak: sekitar 1)
