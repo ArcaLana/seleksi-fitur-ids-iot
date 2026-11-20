@@ -1,4 +1,0 @@
-global            k= 5  F1 makro 0.806 | G-mean 0.441 | recall FIN 0.00
-global            k=10  F1 makro 0.948 | G-mean 0.945 | recall FIN 1.00
-satu-lawan-semua  k= 5  F1 makro 0.795 | G-mean 0.506 | recall FIN 1.00
-satu-lawan-semua  k=10  F1 makro 0.973 | G-mean 0.957 | recall FIN 1.00
