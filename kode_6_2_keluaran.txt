@@ -1,5 +1,0 @@
-Lima fitur terpilih (seed 42):
-global            ['fwd_URG_flag_count', 'fwd_pkts_payload.min', 'fwd_last_window_size', 'fw
-    d_pkts_payload.avg', 'idle.min']
-satu-lawan-semua  ['down_up_ratio', 'bwd_init_window_size', 'fwd_iat.tot', 'fwd_init_window_
-    size', 'fwd_last_window_size']
