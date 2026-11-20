@@ -15,12 +15,20 @@ Seluruh percobaan memakai dataset publik **RT-IoT2022** dan Python (dapat dijala
 
 ## Isi repositori
 
-| Folder | Isi |
-|---|---|
-| `kode_buku/` | Potongan kode per nomor pada buku (Kode 1.1 sampai 12.3; Kode A.1 ada di `lampiran_A/`), tiap berkas `kode_N_M.py`, beserta `kode_N_M_keluaran.txt` berisi keluaran nyata yang tercetak pada buku |
-| `eksperimen/` | Skrip lengkap eksperimen (Lampiran F): `run_seed.py`, `analisis.py`, `run_b4x.py`, `run_b5x.py` |
-| `data/` | Petunjuk menyiapkan data (data tidak diunggah) |
-| `requirements.txt` | Versi pustaka yang dipakai penulis |
+| Berkas / folder | Isi | Bab pada buku |
+|---|---|---|
+| `01_dasar_dan_biaya_fitur.ipynb` | Kutukan dimensi, pengelompokan 80 fitur menurut biaya, kebocoran data dan seleksi pada data acak, pemeriksaan versi pustaka | Bab 1 sampai 3, Lampiran A |
+| `02_filter_wrapper_embedded.ipynb` | Fitur konstan dan berkorelasi, waktu metode filter, forward selection, waktu lima metode berbasis model | Bab 4 dan 5 |
+| `03_data_timpang_dan_biaya.ipynb` | Seleksi pada kelas langka, F1 makro, G-mean, recall per kelas, model biaya dan anggaran, titik Pareto | Bab 6 dan 7 |
+| `04_stabilitas_dan_praktikum.ipynb` | Indeks Jaccard dan Kuncheva, agregasi peringkat, praktikum 20 seed, uji Friedman dan Wilcoxon | Bab 8 dan 9 |
+| `05_ketahanan_sumber_daya_studi_kasus.ipynb` | Ablasi fitur port, serangan baru, latensi dan memori, studi kasus gateway | Bab 10 sampai 12 |
+| `kode_buku/` | Potongan kode per nomor pada buku (Kode 1.1 sampai 12.3; Kode A.1 di `lampiran_A/`), berkas `kode_N_M.py` beserta `kode_N_M_keluaran.txt` | Bab 1 sampai 12 |
+| `eksperimen/` | Skrip lengkap eksperimen (Lampiran F): `siapkan_output.py`, `run_seed.py`, `analisis.py`, `run_b4x.py`, `run_b5x.py`, `buat_gambar.py` | Bab 4, 5, 9 |
+| `hasil_nyata/` | Keluaran asli dari menjalankan kode (CSV, JSON, teks, gambar), per bab; lihat bagian paling bawah | Bab 1 sampai 12 |
+| `data/` | Petunjuk menyiapkan data (data tidak diunggah) | |
+| `requirements.txt` | Versi pustaka yang dipakai penulis | |
+
+Nomor kode pada notebook sama dengan nomor pada buku, sehingga mudah dicocokkan. Keluaran yang tersimpan di bawah sel adalah keluaran asli dari hasil menjalankan kode oleh penulis.
 
 ### Peta kode per bab
 
@@ -41,23 +49,37 @@ Seluruh percobaan memakai dataset publik **RT-IoT2022** dan Python (dapat dijala
 
 ## Data
 
-Dataset **RT-IoT2022** tidak disertakan. Unduh dari UCI (<https://doi.org/10.24432/C5P338>) dan siapkan folder `output/`
-dengan notebook Jilid 1; rinciannya ada di `data/README.md`.
+Dataset **RT-IoT2022** tidak disertakan. Unduh `RT_IOT2022.csv` dari UCI (<https://doi.org/10.24432/C5P338>), letakkan di `data/`,
+lalu folder `output/` (setara keluaran Bab 8 Jilid 1) dapat disusun dengan:
 
-## Cara menjalankan
+```bash
+python3 -I eksperimen/siapkan_output.py data/RT_IOT2022.csv output
+```
+
+Bila Anda sudah menjalankan notebook Jilid 1, folder `output/` dari sana dapat dipakai langsung. Rincian ada di `data/README.md`.
+
+## Cara menjalankan di Google Colab
+
+1. Buka notebook dari repositori ini di Colab (**File → Open notebook → GitHub**, tempel alamat repositori), atau unduh notebook dan unggah ke <https://colab.research.google.com>.
+2. Jalankan sel **Persiapan** di notebook pertama yang Anda buka. Sel itu mengambil repositori, memasang pustaka, meminta Anda mengunggah `RT_IOT2022.csv`, lalu menyusun `output/`.
+3. Jalankan sel berurutan dari atas ke bawah. Urutan yang disarankan: `01` → `02` → `03` → `04` → `05`.
+
+Catatan waktu: Kode 5.2, 9.3, dan 9.4 memakan satu sampai tiga menit pada mesin dua inti. Berkas yang diunggah ke panel Files hilang ketika sesi Colab berakhir.
+
+Kode 7.3, 8.2, 10.1, 11.1, 11.2, 12.2, dan 12.3 memerlukan berkas hasil percobaan penulis yang belum tersedia di repositori ini; pada notebook, sel-sel itu diberi catatan dan keluaran aslinya tetap tampil.
+
+### Tanpa Colab
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-# letakkan folder output/ (hasil Jilid 1) di direktori kerja
+python3 -I eksperimen/siapkan_output.py data/RT_IOT2022.csv output
 python3 kode_buku/bab9/kode_9_1.py
 cd eksperimen && mkdir hasil && python3 -I run_seed.py 42 hasil
 ```
 
-Di Google Colab: unggah `output/` ke panel Files, lalu jalankan skrip dengan `!python3 ...` atau tempel isinya pada sel.
-
 Sebagian potongan kode bergantung pada variabel dari potongan sebelumnya dalam bab yang sama (misalnya Kode 6.2 memakai
-data yang disiapkan Kode 6.1), jadi jalankan berurutan dalam satu sesi, atau gabungkan ke satu berkas.
+data yang disiapkan Kode 6.1), jadi jalankan berurutan dalam satu sesi, atau pakai notebook.
 
 ## Lingkungan penulis
 
@@ -66,9 +88,9 @@ Percobaan dijalankan pada mesin Linux dua inti. Skor dapat sedikit berbeda bila 
 
 ## Status pengujian
 
-- Seluruh 39 berkas `.py` lolos pemeriksaan sintaks.
-- Empat skrip di `eksperimen/` dijalankan penuh sampai selesai pada data **sintetis** berbentuk sama dengan keluaran Jilid 1 (80 fitur, 12 kelas), untuk memastikan tidak ada galat. Skor pada data sintetis itu tidak bermakna dan tidak dipakai di buku. Hasil pada buku berasal dari data RT-IoT2022 asli.
-- Potongan di `kode_buku/` yang tidak membutuhkan data dapat dijalankan langsung; sisanya membutuhkan folder `output/`.
+- Kelima notebook dan 39 berkas `.py` lolos pemeriksaan sintaks.
+- Notebook 01 sampai 04 dijalankan sampai selesai pada data RT-IoT2022 asli, kecuali Kode 7.3 dan 8.2 yang memerlukan berkas hasil yang belum ada. Notebook 05: Kode 10.2, 10.3, dan 12.1 dijalankan; Kode 10.1, 11.1, 11.2, 12.2, dan 12.3 menunggu berkas hasil.
+- Skor pada Bab 4, 5, dan 9 dihitung ulang dari awal (20, 10, dan 20 seed) dan cocok dengan angka pada buku; keluarannya ada di `hasil_nyata/`.
 
 ## Prinsip percobaan
 
